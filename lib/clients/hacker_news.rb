@@ -5,7 +5,11 @@ class Clients::HackerNews
   def initialize
     conn = Faraday.new(:url => 'http://api.ihackernews.com')
     response = conn.get '/page'
-    @data = JSON.parse(response.body)
+    begin
+      @data = JSON.parse(response.body)
+    rescue
+      @data = {"items" => []}
+    end
   end
 
 end

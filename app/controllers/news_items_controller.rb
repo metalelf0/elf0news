@@ -42,8 +42,11 @@ class NewsItemsController < ApplicationController
 
   def fetch
     client = Clients::HackerNews.new
-    NewsItemFactory.new.create_from(client.data)
-    redirect_to news_items_path, :notice => "Successfully read news items."
+    if NewsItemFactory.new.create_from(client.data)
+      redirect_to news_items_path, :notice => "Successfully read news items."
+    else
+      redirect_to news_items_path, :error => "Something went wrong fetching items, try again."
+    end
   end
 
   def destroy_all
