@@ -1,0 +1,20 @@
+<%= form_for @news_item do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :score %><br />
+    <%= f.number_field :score %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.label :points %><br />
+    <%= f.number_field :points %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
