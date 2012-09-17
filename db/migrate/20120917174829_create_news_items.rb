@@ -4,7 +4,6 @@ class CreateNewsItems < ActiveRecord::Migration
       t.integer :score
       t.string :title
       t.string :url
-      t.integer :points
       t.timestamps
     end
   end

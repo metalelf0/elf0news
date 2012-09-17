@@ -1,6 +1,7 @@
 class NewsItemsController < ApplicationController
   def index
     @news_items = NewsItem.all
+    @scores = NewsItem.pluck(:score)
   end
 
   def show
