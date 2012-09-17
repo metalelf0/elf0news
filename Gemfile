@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '3.2.3'
 
@@ -6,8 +6,8 @@ gem 'rails', '3.2.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
 gem 'json'
+gem 'faraday'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -26,8 +26,13 @@ group :development do
 end
 
 group :test, :development do
+  gem "capybara"
   gem "mocha"
   gem 'rspec-rails'
+end
+
+group :test do
+  gem 'vcr'
 end
 
 gem 'jquery-rails'

@@ -1,11 +1,12 @@
 Metalelf0News::Application.routes.draw do
+  match 'news_items/fetch' => 'news_items#fetch', :as => :fetch_news_items
+  match 'news_items/destroy_all' => 'news_items#destroy_all', :as => :destroy_all_news_items
   resources :news_items
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:

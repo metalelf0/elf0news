@@ -21,3 +21,5 @@
 </table>
 
 <p><%= link_to "New News Item", new_news_item_path %></p>
+<p><%= link_to "Lookup from HackerNews", fetch_news_items_path %></p>
+<p><%= link_to "Destroy all", destroy_all_news_items_path, :confirm => 'Are you REALLY sure?', :method => :delete %></p>

@@ -39,4 +39,16 @@ class NewsItemsController < ApplicationController
     @news_item.destroy
     redirect_to news_items_url, :notice => "Successfully destroyed news item."
   end
+
+  def fetch
+    client = Clients::HackerNews.new
+    NewsItemFactory.new.create_from(client.data)
+    redirect_to news_items_path, :notice => "Successfully read news items."
+  end
+
+  def destroy_all
+    @news_items = NewsItem.all
+    @news_items.each { |ni| ni.destroy }
+    redirect_to news_items_url, :notice => "Successfully destroyed all news items."
+  end
 end

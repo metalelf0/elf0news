@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.ihackernews.com/page
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      cache-control:
+      - private
+      content-type:
+      - application/json; charset=utf-8
+      server:
+      - Microsoft-IIS/7.5
+      x-aspnetmvc-version:
+      - '2.0'
+      x-aspnet-version:
+      - 4.0.30319
+      x-powered-by:
+      - ASP.NET
+      date:
+      - Mon, 17 Sep 2012 20:28:51 GMT
+      connection:
+      - close
+      content-length:
+      - '7128'
+    body:
+      encoding: ASCII-8BIT
+      string: ! '{"nextId":null,"items":[{"title":"Introducing the Command Bar","url":"https://github.com/blog/1264-introducing-the-command-bar","id":4534549,"commentCount":7,"points":50,"postedAgo":"28
+        minutes ago","postedBy":"dko"},{"title":"Odd Things Happen When You Chop Up
+        Cities and Stack Them Sideways","url":"http://www.npr.org/blogs/krulwich/2012/09/12/160996525/odd-things-happen-when-you-chop-up-cities-and-stack-them-sideways?sc=tw&cc=share&utm_source=buffer&buffer_share=f34b7","id":4533699,"commentCount":26,"points":147,"postedAgo":"2
+        hours ago","postedBy":"missechokit"},{"title":"Android can be beautiful","url":"http://androidniceties.tumblr.com/","id":4533310,"commentCount":100,"points":208,"postedAgo":"4
+        hours ago","postedBy":"mephju"},{"title":"CoffeeScript: less typing, bad readability","url":"http://ceronman.com/2012/09/17/coffeescript-less-typing-bad-readability/","id":4533737,"commentCount":79,"points":130,"postedAgo":"2
+        hours ago","postedBy":"dcu"},{"title":"Warp Drive May Be More Feasible Than
+        Thought, Scientists Say","url":"http://news.yahoo.com/warp-drive-may-more-feasible-thought-scientists-161301109.html","id":4534359,"commentCount":12,"points":41,"postedAgo":"1
+        hour ago","postedBy":"mtgx"},{"title":"Hardware is dead","url":"http://venturebeat.com/2012/09/15/hardware-is-dead/","id":4533215,"commentCount":94,"points":125,"postedAgo":"4
+        hours ago","postedBy":"swombat"},{"title":"Why I Migrated Away From MongoDB","url":"http://svs.io/post/31724990463/why-i-migrated-away-from-mongodb","id":4532922,"commentCount":94,"points":128,"postedAgo":"5
+        hours ago","postedBy":"svs"},{"title":"7 sets Venn Diagram: interactive 128
+        color combinations from mixing 7 colors","url":"http://moebio.com/research/sevensets/","id":4533177,"commentCount":6,"points":91,"postedAgo":"4
+        hours ago","postedBy":"chedar"},{"title":"New Metasploit 0-day exploit for
+        IE 7, 8 & 9 on Windows XP, Vista, and 7","url":"https://community.rapid7.com/community/metasploit/blog/2012/09/17/lets-start-the-week-with-a-new-internet-explorer-0-day-in-metasploit","id":4533389,"commentCount":24,"points":72,"postedAgo":"3
+        hours ago","postedBy":"turnersr"},{"title":"Ramit Sethi and Patrick McKenzie
+        on Getting Your First Consulting Client","url":"http://www.kalzumeus.com/2012/09/17/ramit-sethi-and-patrick-mckenzie-on-getting-your-first-consulting-client/","id":4533498,"commentCount":17,"points":62,"postedAgo":"3
+        hours ago","postedBy":"ananthrk"},{"title":"A Tour of the Acme Editor","url":"http://research.swtch.com/acme","id":4533156,"commentCount":28,"points":78,"postedAgo":"4
+        hours ago","postedBy":"lnmx"},{"title":"The Cellphone Glued to Your Hand","url":"http://null.authpad.com/the-cellphone-glued-to-your-hand","id":4534189,"commentCount":13,"points":20,"postedAgo":"1
+        hour ago","postedBy":"nilium"},{"title":"Everything\u0027s broken and nobody\u0027s
+        upset","url":"http://www.hanselman.com/blog/EverythingsBrokenAndNobodysUpset.aspx","id":4531549,"commentCount":302,"points":486,"postedAgo":"13
+        hours ago","postedBy":"axefrog"},{"title":" You\u0027re Not Listening","url":"http://www.randsinrepose.com/archives/2012/08/28/youre_not_listening.html","id":4533833,"commentCount":10,"points":31,"postedAgo":"2
+        hours ago","postedBy":"wglb"},{"title":"Actually, YOU don\u0027t understand
+        Lexical Scope","url":"https://github.com/raganwald/homoiconic/blob/master/2012/09/actually-YOU-dont-understand-lexical-scope.md#actually-you-dont-understand-lexical-scope","id":4534408,"commentCount":2,"points":11,"postedAgo":"52
+        minutes ago","postedBy":"fogus"},{"title":"TinyToCS — computer science research
+        of 140 characters or less","url":"http://tinytocs.org/","id":4532993,"commentCount":8,"points":72,"postedAgo":"4
+        hours ago","postedBy":"dhotson"},{"title":"Show HN: Download-free screensharing
+        for better customer support","url":"http://usefirefly.com","id":4534173,"commentCount":23,"points":17,"postedAgo":"1
+        hour ago","postedBy":"dshipper"},{"title":"Doctorow & Stross\u0027s \"The
+        Rapture of the Nerds\" creative commons edition released","url":"http://www.antipope.org/charlie/blog-static/2012/09/rapturous-nerds.html","id":4532592,"commentCount":24,"points":85,"postedAgo":"6
+        hours ago","postedBy":"cstross"},{"title":"Google+: 400 Million Registrations,
+        100 Million Monthly Active Users","url":"http://thenextweb.com/google/2012/09/17/as-predicted-google-passes-400m-registered-users-now-100m-monthly-active-users/","id":4533404,"commentCount":31,"points":39,"postedAgo":"3
+        hours ago","postedBy":"rkudeshi"},{"title":"Contributing Guidelines","url":"https://github.com/blog/1184-contributing-guidelines","id":4533261,"commentCount":0,"points":36,"postedAgo":"4
+        hours ago","postedBy":"infertux"},{"title":"Recruiter Disruption Rant","url":"http://lists.lrug.org/pipermail/chat-lrug.org/2012-September/008072.html","id":4532768,"commentCount":88,"points":93,"postedAgo":"5
+        hours ago","postedBy":"jimeh"},{"title":"Google Acquires Nik Software","url":"http://education.niksoftware.com/2012/09/17/google-acquires-nik-software/","id":4533056,"commentCount":19,"points":44,"postedAgo":"4
+        hours ago","postedBy":"denzil_correa"},{"title":"Just Cause 2 Multiplayer:
+        Behind the scenes with gaming\u0027s greatest hack","url":"http://www.redbull.co.uk/cs/Satellite/en_UK/Article/Just-Cause-2-Multiplayer-Behind-the-scenes-with-021243257915642","id":4532318,"commentCount":24,"points":90,"postedAgo":"7
+        hours ago","postedBy":"bensillis"},{"title":"HNpod 9: How We Keep GitHub fast,
+        Amazon Kindle Range and Human.io","url":"http://www.hnpod.com/episodes/hnpod-9-how-we-keep-github-fast-amazon-kindle-range-and-human-io-with-stephen-corona-and-paul-biggar?episode=9","id":4534119,"commentCount":1,"points":12,"postedAgo":"1
+        hour ago","postedBy":"mmahemoff"},{"title":"Webcrawling at Scale with Nokogiri
+        and IronWorker: Part 2","url":"http://blog.iron.io/2012/09/webcrawling-at-scale-with-nokogiri-and.html","id":4533578,"commentCount":2,"points":22,"postedAgo":"3
+        hours ago","postedBy":"kenfromm"},{"title":"Presenting the Heroku Dashboard","url":"http://blog.heroku.com/archives/2012/9/17/dashboard/","id":4533566,"commentCount":3,"points":22,"postedAgo":"3
+        hours ago","postedBy":"craigkerstiens"},{"title":"Amazon Maps API","url":"http://www.amazonappstoredev.com/2012/09/amazon-maps-api.html","id":4532099,"commentCount":42,"points":108,"postedAgo":"8
+        hours ago","postedBy":"ryandvm"},{"title":"Benchmarking Parallels, Fusion,
+        and VirtualBox vs Boot Camp - The Mac Observer","url":"http://www.macobserver.com/tmo/article/benchmarking-parallels-fusion-and-virtualbox-against-boot-camp","id":4534322,"commentCount":4,"points":7,"postedAgo":"1
+        hour ago","postedBy":"tanousjm"},{"title":"52 Hertz: The Loneliest Whale in
+        the World ","url":"http://blogs.discovery.com/animal_news/2012/05/52-hertz-the-loneliest-whale-in-the-world.html","id":4531563,"commentCount":50,"points":208,"postedAgo":"13
+        hours ago","postedBy":"antimora"},{"title":"Sh.py","url":"http://amoffat.github.com/sh/index.html","id":4530897,"commentCount":54,"points":439,"postedAgo":"19
+        hours ago","postedBy":"daenz"}],"version":"1.0","cachedOnUTC":"\/Date(1347913682580)\/"}'
+    http_version: 
+  recorded_at: Mon, 17 Sep 2012 20:28:55 GMT
+recorded_with: VCR 2.2.5
