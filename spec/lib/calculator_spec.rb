@@ -29,4 +29,19 @@ describe Calculator do
     end
   end
 
+  context "Calculating mode" do
+    it "returns nil when collection is empty" do
+      Calculator.new.mode([]).should be_nil
+    end
+    it "returns same value when only one element" do
+      Calculator.new.mode([7]).should eql([7])
+    end
+    it "returns the right mode value for a collection with a dominant value" do
+      Calculator.new.mode([7, 7, 13]).should eql([7])
+    end
+    it "returns a collection of the most occurring items when there isnt a dominant one" do
+      Calculator.new.mode([50, 50, 7, 13, 22, 7]).should eql( [7, 50])
+    end
+  end
+
 end

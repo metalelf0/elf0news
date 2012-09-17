@@ -15,4 +15,21 @@ class Calculator
     end
   end
 
+  def mode collection
+    return nil if collection.empty?
+    occures = Hash.new(0)
+    collection.each{|x| occures[x] += 1 }
+    max = 0
+    modes = []
+    occures.each{|key, value|
+        if value > max then
+            modes = [key]
+            max = value
+        elsif value == max
+            modes.push(key)
+        end
+    }
+    return modes.sort
+  end
+
 end
