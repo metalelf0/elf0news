@@ -1,5 +1,6 @@
 Metalelf0News::Application.routes.draw do
   match 'news_items/fetch' => 'news_items#fetch', :as => :fetch_news_items
+  match 'news_items/send_top_links' => 'news_items#send_top_links', :as => :send_top_links
   match 'news_items/destroy_all' => 'news_items#destroy_all', :as => :destroy_all_news_items
   resources :news_items
 

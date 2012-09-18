@@ -37,6 +37,7 @@ end
 
 gem 'jquery-rails'
 gem 'roadie'
+gem 'email_veracity'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

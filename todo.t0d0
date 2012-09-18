@@ -1,4 +1,7 @@
-[ ] (5) mail form
+[.] (5) mail form
+[X]     error when no email provided
+[ ]     error when email is not valid
+[ ]     correctly send email when address is ok
 [ ] (3) HTML mail
 [ ] (3) better formatting for stats
 [X] (4) display error on connection issues

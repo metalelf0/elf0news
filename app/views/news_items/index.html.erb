@@ -23,3 +23,9 @@
 <p><%= link_to "New News Item", new_news_item_path %></p>
 <p><%= link_to "Lookup from HackerNews", fetch_news_items_path %></p>
 <p><%= link_to "Destroy all", destroy_all_news_items_path, :confirm => 'Are you REALLY sure?', :method => :delete %></p>
+
+<%= form_tag send_top_links_path do %>
+  <%= label_tag :recipient, "Enter email:" %>
+  <%= text_field_tag :recipient %>
+  <%= submit_tag "Send top links" %>
+<% end %>

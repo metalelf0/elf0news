@@ -43,11 +43,18 @@ class NewsItemsController < ApplicationController
   def fetch
     client = Clients::HackerNews.new
     updated_items = NewsItemFactory.new.create_from(client.data)
-    puts "~~~~~~ #{updated_items}"
     if updated_items > 0
       redirect_to news_items_path, :notice => "Successfully read news items."
     else
       redirect_to news_items_path, :alert => "Unable to update news items, try again later."
+    end
+  end
+
+  def send_top_links
+    begin
+      LinksMailer.top_links(params[:recipient]).deliver
+    rescue ArgumentError => e
+      redirect_to news_items_path, :alert => e.message
     end
   end
 

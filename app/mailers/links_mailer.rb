@@ -1,12 +1,9 @@
 class LinksMailer < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "only_the_best@links.com"
 
-  # Subject can be set in your I18n file at config/locales/en.yml
-  # with the following lookup:
-  #
-  #   en.links_mailer.top_links.subject
-  #
   def top_links(address)
+    raise ArgumentError.new("You must provide an email address.") if address.blank?
+    raise ArgumentError.new("You must provide a valid email address.") unless EmailVeracity::Address.new(address).valid?
     @title = "Top HackerNews links for #{Date.today}"
     @scores = NewsItem.pluck(:score)
     current_median = Calculator.new.median(@scores)
