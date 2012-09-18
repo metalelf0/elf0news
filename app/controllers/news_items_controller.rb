@@ -42,10 +42,11 @@ class NewsItemsController < ApplicationController
 
   def fetch
     client = Clients::HackerNews.new
-    if NewsItemFactory.new.create_from(client.data)
+    updated_items = NewsItemFactory.new.create_from(client.data)
+    if updated_items > 0
       redirect_to news_items_path, :notice => "Successfully read news items."
     else
-      redirect_to news_items_path, :error => "Something went wrong fetching items, try again."
+      redirect_to news_items_path, :error => "Unable to update news items, try again later."
     end
   end
 

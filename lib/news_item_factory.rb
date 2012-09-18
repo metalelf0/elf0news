@@ -8,6 +8,7 @@ class NewsItemFactory
       news_item = NewsItem.find_or_create_by_original_id(item['id'])
       news_item.update_attributes(:title => item['title'], :score => item['points'], :url => item['url'])
     end
+    return json_data['items'].size
   end
 
 end
