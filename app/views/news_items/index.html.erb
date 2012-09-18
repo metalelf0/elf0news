@@ -12,7 +12,7 @@
     <tr>
     <td><%= news_item.score %></td>
     <td><%= news_item.title %></td>
-    <td><%= news_item.url %></td>
+    <td><%= link_to news_item.url.truncate(50), news_item.url, :target => "new" %></td>
     <td><%= link_to "Show", news_item %></td>
     <td><%= link_to "Edit", edit_news_item_path(news_item) %></td>
     <td><%= link_to "Destroy", news_item, :confirm => 'Are you sure?', :method => :delete %></td>
