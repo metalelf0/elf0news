@@ -53,6 +53,7 @@ class NewsItemsController < ApplicationController
   def send_top_links
     begin
       LinksMailer.top_links(params[:recipient]).deliver
+      redirect_to news_items_path, :notice => "Email delivered. Check your inbox!"
     rescue ArgumentError => e
       redirect_to news_items_path, :alert => e.message
     end

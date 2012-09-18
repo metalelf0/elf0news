@@ -23,4 +23,11 @@ describe 'Sending mail with top items' do
     page.should have_content("You must provide a valid email address.")
   end
 
+  it "sends email when valid address provided" do
+    visit root_path
+    fill_in "Enter email:", :with => "try_this@mailinator.com"
+    click_button 'Send top links'
+    page.should have_content("Email delivered. Check your inbox!")
+  end
+
 end

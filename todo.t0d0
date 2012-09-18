@@ -1,9 +1,9 @@
-[.] (5) mail form
+[X] (5) mail form
 [X]     error when no email provided
-[ ]     error when email is not valid
-[ ]     correctly send email when address is ok
+[X]     error when email is not valid
+[X]     correctly send email when address is ok
 [ ] (3) HTML mail
-[ ] (3) better formatting for stats
+[X] (3) better formatting for stats
 [X] (4) display error on connection issues
 [X] (2) make links in homepage <a>
 [X] (2) sort by score in homepage
