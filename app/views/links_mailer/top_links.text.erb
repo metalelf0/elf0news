@@ -1,12 +1,22 @@
 <%= @title %>
 
+Statistics about current homepage:
+
+------------------------------------------------------------------------------
+Mean:    <%= @mean.round(2) %>
+Median:  <%= @median %>
+Mode(s): <%= @mode %>
+------------------------------------------------------------------------------
+
+Links above the median:
+
 <% @top_links.each do |link| %>
 
-  <%= link.title %>
-  =================
+<%=raw link.title %>
+<%= "#" * link.title.length %>
 
-  URL: <%= link.url %>
-  Score: <%= link.score %>
+URL:   <%= link.url %>
+Score: <%= link.score %>
 
 ------------------------------------------------------------------------------
 

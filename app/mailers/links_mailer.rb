@@ -6,8 +6,10 @@ class LinksMailer < ActionMailer::Base
     raise ArgumentError.new("You must provide a valid email address.") unless EmailVeracity::Address.new(address).valid?
     @title = "Top HackerNews links for #{Date.today}"
     @scores = NewsItem.pluck(:score)
-    current_median = Calculator.new.median(@scores)
-    @top_links = NewsItem.where("score > ?", current_median)
+    @median = Calculator.new.median(@scores)
+    @mode = Calculator.new.mode(@scores)
+    @mean = Calculator.new.mean(@scores)
+    @top_links = NewsItem.where("score > ?", @median)
 
     mail to: address
   end
