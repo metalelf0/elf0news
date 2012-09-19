@@ -1,8 +1,10 @@
-== Elf0News
+Elf0News
+===
 
 This is an HackerNews news aggregator.
 
-== Setup
+Setup
+===
 
 The application uses Gmail SMTP to send emails.
 You need to setup your gmail credentials into your environment if you want to send emails.
@@ -14,13 +16,15 @@ You can do it this way:
 
 As usual, after cloning the app, run `bundle install`. Usage of a RVM gemset is highly recommended.
 
-== Usage
+Usage
+===
 
 * Use the "Lookup from HackerNews" link to load the current homepage news from the HN API
 * enter your email and click "Send top links" to receive the top links in your inbox
 * if you want to delete all links and start from scratch use the "Destroy all" link
 
-== Technical notes
+Technical notes
+===
 
 * application tests are available in the `spec/` folder. Run them with `bundle exec rspec spec`
 * I used the [VCR](https://github.com/myronmarston/vcr) gem to cache requests to the HN API in my test environment.
