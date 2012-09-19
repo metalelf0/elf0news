@@ -1,4 +1,0 @@
-== Elf0News
-
-This is an HackerNews news aggregator. Work in progress, so keep in touch ;)
-
